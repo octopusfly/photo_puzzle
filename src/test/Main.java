@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 /**
- * @author ’≈”Ó∑…
+ * @author Zhang Yufei
  * @Time 2016-07-10
  *
  */
