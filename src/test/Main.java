@@ -205,13 +205,13 @@ public class Main {
 	 * @return None.
 	 */
 	public static void sample() {
-		BufferedImage smp = new BufferedImage(320, 320, BufferedImage.TYPE_3BYTE_BGR);
-		for (int i = 0; i < 32; i++) {
-			for (int j = 0; j < 32; j++) {
+		BufferedImage smp = new BufferedImage(640, 640, BufferedImage.TYPE_3BYTE_BGR);
+		for (int i = 0; i < 64; i++) {
+			for (int j = 0; j < 64; j++) {
 				System.out.println("(" + i + ", " + j + ")");
 				for (int x = 0; x < 10; x++) {
 					for (int y = 0; y < 10; y++) {
-						smp.setRGB(i * 10 + x, j * 10 + y, orginal.getRGB(i * 3 + 1, j * 3 + 1));
+						smp.setRGB(i * 10 + x, j * 10 + y, orginal.getRGB(i * 2 + 1, j * 2 + 1));
 					}
 				}
 			}
