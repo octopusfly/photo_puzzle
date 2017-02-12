@@ -158,7 +158,6 @@ public class MainFrame extends JFrame {
         generateButton.setEnabled(false);
 
         generateButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 stateField.setText("当前状态：正在合成...");
                 Thread thread = new Thread() {
@@ -274,7 +273,6 @@ public class MainFrame extends JFrame {
             chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
         }
 
-        @Override
         public void actionPerformed(ActionEvent event) {
             JButton button = (JButton) event.getSource();
             JTextField result = null;
@@ -298,7 +296,6 @@ public class MainFrame extends JFrame {
      * Listener for buttons.
      */
     class ParameterListener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent event) {
             JButton button = (JButton) event.getSource();
             if (button == setButton) {
@@ -330,7 +327,6 @@ public class MainFrame extends JFrame {
     }
 
     class SizeListener implements ChangeListener {
-        @Override
         public void stateChanged(ChangeEvent event) {
             int x = sizeSlider.getValue();
             sizeField.setText("" + x);
